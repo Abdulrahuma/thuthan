@@ -228,49 +228,7 @@ Error Response (when API fails):
 
 ---
 
-## Requirements Satisfied
 
-| # | Requirement | Status |
-|---|-------------|--------|
-| 1 | Fetch renewable energy news from Google News | ✅ |
-| 2 | Include news from India and international sources | ✅ |
-| 3 | Extract only news from the last 24 hours | ✅ |
-| 4 | Categorization (Companies, Government, International, Others) | ✅ |
-| 5 | Functional application (frontend + backend) | ✅ |
-| 6 | Clean and structured code | ✅ |
-| 7 | Proper categorization logic | ✅ |
-| 8 | Working UI display | ✅ |
-| 9 | PDF export with download option | ✅ |
-
----
-
-## Troubleshooting
-
-### No news displayed
-- Check if backend is running on port 5001
-- Verify GNEWS_API_KEY in backend/.env
-- Check browser console for error messages
-- Ensure API key is valid at https://gnews.io
-
-### API rate limit exceeded
-- GNews free tier: 100 requests/day
-- Each refresh uses multiple API calls
-- Wait and try again later
-
-### Empty after refresh
-- Clear browser localStorage
-- Refresh page
-- Check if GNews API is working
-
-### Still not working
-- Check browser console for JavaScript errors
-- Try clearing localStorage: `localStorage.clear()` in browser console
-
----
-
-## License
-
-MIT License
 
 ---
 
